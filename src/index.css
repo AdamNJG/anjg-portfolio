@@ -9,6 +9,7 @@
   --color-text: #213547;
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #f0f0f0;
+  --color-bg-tertiary: #cccccc;
   --color-link-hover: #747bff;
   --button-bg: #f9f9f9;
   --button-border-hover: #646cff;
@@ -19,6 +20,7 @@
   --color-text: rgba(255, 255, 255, 0.87);
   --color-bg-primary: #242424;
   --color-bg-secondary: #292929;
+  --color-bg-tertiary: #303030;
   --color-link-hover: #535bf2;
   --button-bg: #1a1a1a;
   --button-border-hover: #646cff;
