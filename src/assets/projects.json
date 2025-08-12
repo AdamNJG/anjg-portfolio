@@ -22,9 +22,9 @@
         "gitLink": "https://github.com/AdamNJG/basicswipehandler"
     },
     {
-    "title": "proto-translator",
-    "description": "A Docker-based sidecar that serves as a protocol translation layer. It enables developers to add plugins compiled to Linux native executables via FFI C header files. Supports Input, Middleware, and Output plugins, providing a flexible architecture for handling various protocol translation scenarios. This is a work in progress, with FFI headers still in development, internal multi-threading planned for performance, and Docker containers for deployment and acceptance testing. Test plugins use Axum and Tokio to create HTTP servers for acceptance testing.",
-    "techStack": ["Rust", "Docker", "FFI", "Tokio", "Axum", "Criterion", "Playwright"],
-    "gitLink": "https://github.com/AdamNJG/proto-translator"
+        "title": "proto-translator",
+        "description": "A Docker-based sidecar that serves as a protocol translation layer. It enables developers to add plugins compiled to Linux native executables via FFI C header files. Supports Input, Middleware, and Output plugins, providing a flexible architecture for handling various protocol translation scenarios. This is a work in progress, with FFI headers still in development, internal multi-threading planned for performance, and Docker containers for deployment and acceptance testing. Test plugins use Axum and Tokio to create HTTP servers for acceptance testing.",
+        "techStack": ["Rust", "Docker", "FFI", "Tokio", "Axum", "Criterion", "Playwright"],
+        "gitLink": "https://github.com/AdamNJG/proto-translator"
     }
 ]
