@@ -25,6 +25,8 @@ jobs:
       run: npm run build
 
     - name: Commit and push docs folder
+      env:
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
