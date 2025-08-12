@@ -18,3 +18,11 @@
     padding: 1rem 0.5rem; 
   }
 }
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px;
+  justify-content: center;
+}

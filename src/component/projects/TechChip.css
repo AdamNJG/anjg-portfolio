@@ -1,0 +1,14 @@
+.chip {
+  display: flex;
+  align-items: center;
+  background-color: var(--button-bg);
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+.chip-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
