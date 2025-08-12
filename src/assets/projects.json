@@ -17,8 +17,14 @@
     },
     {
         "title": "Basic Swipe Handler",
-          "description": "A reusable, framework-agnostic TypeScript library to detect and handle swipe gestures and touch movements on both horizontal and vertical axes. It supports configurable swipe thresholds and callbacks for swipe directions (left, right, up, down), as well as continuous movement updates with minimum and maximum move thresholds. Built with clean API design, strong typing, and performance in mind. Currently a work in progress, with planned enhancements and documentation updates. This was originally created to work with a device that had a touch screen, but no native handling.",
+        "description": "A reusable, framework-agnostic TypeScript library to detect and handle swipe gestures and touch movements on both horizontal and vertical axes. It supports configurable swipe thresholds and callbacks for swipe directions (left, right, up, down), as well as continuous movement updates with minimum and maximum move thresholds. Built with clean API design, strong typing, and performance in mind. Currently a work in progress, with planned enhancements and documentation updates. This was originally created to work with a device that had a touch screen, but no native handling.",
         "techStack": ["TypeScript", "Event Handling", "Custom Gesture Logic", "Vitest"],
         "gitLink": "https://github.com/AdamNJG/basicswipehandler"
+    },
+    {
+    "title": "proto-translator",
+    "description": "A Docker-based sidecar that serves as a protocol translation layer. It enables developers to add plugins compiled to Linux native executables via FFI C header files. Supports Input, Middleware, and Output plugins, providing a flexible architecture for handling various protocol translation scenarios. This is a work in progress, with FFI headers still in development, internal multi-threading planned for performance, and Docker containers for deployment and acceptance testing. Test plugins use Axum and Tokio to create HTTP servers for acceptance testing.",
+    "techStack": ["Rust", "Docker", "FFI", "Tokio", "Axum", "Criterion", "Playwright"],
+    "gitLink": "https://github.com/AdamNJG/proto-translator"
     }
 ]
