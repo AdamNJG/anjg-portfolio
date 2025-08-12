@@ -17,7 +17,7 @@
     },
     {
         "title": "Basic Swipe Handler",
-          "description": "A reusable, framework-agnostic TypeScript library to detect and handle swipe gestures and touch movements on both horizontal and vertical axes. It supports configurable swipe thresholds and callbacks for swipe directions (left, right, up, down), as well as continuous movement updates with minimum and maximum move thresholds. Built with clean API design, strong typing, and performance in mind. Currently a work in progress, with planned enhancements and documentation updates.",
+          "description": "A reusable, framework-agnostic TypeScript library to detect and handle swipe gestures and touch movements on both horizontal and vertical axes. It supports configurable swipe thresholds and callbacks for swipe directions (left, right, up, down), as well as continuous movement updates with minimum and maximum move thresholds. Built with clean API design, strong typing, and performance in mind. Currently a work in progress, with planned enhancements and documentation updates. This was originally created to work with a device that had a touch screen, but no native handling.",
         "techStack": ["TypeScript", "Event Handling", "Custom Gesture Logic", "Vitest"],
         "gitLink": "https://github.com/AdamNJG/basicswipehandler"
     }

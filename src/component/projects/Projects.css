@@ -1,5 +1,20 @@
 .projectsContainer {
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
     padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
+}
+
+@media (min-width: 850px) {
+  .projectsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .projectsContainer {
+    padding: 1rem 0.5rem; 
+  }
 }
