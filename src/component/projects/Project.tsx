@@ -4,10 +4,11 @@ interface ProjectProps {
   title: string;
   description: string;
   techStack: string[];
-  link?: string;
+  gitLink?: string;
+  deployedLink?: {link: string, displayText: string};
 }
 
-const Project: React.FC<ProjectProps> = ({ title, description, techStack, link }) => {
+const Project: React.FC<ProjectProps> = ({ title, description, techStack, gitLink, deployedLink }) => {
   console.log('hi');
 
   return (
@@ -15,10 +16,17 @@ const Project: React.FC<ProjectProps> = ({ title, description, techStack, link }
       <h3>{title}</h3>
       <p>{description}</p>
       <p><strong>Tech Stack:</strong> {techStack.join(', ')}</p>
-      {link && (
+      {gitLink && (
         <p>
-          <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--button-text)' }}>
-            View Project
+          <a href={gitLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--button-text)' }}>
+            View Source Code
+          </a>
+        </p>
+      )}
+      {deployedLink && (
+        <p>
+          <a href={deployedLink.link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--button-text)' }}>
+            {deployedLink.displayText}
           </a>
         </p>
       )}

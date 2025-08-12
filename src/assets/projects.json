@@ -1,8 +1,24 @@
 [
     {
-    "title": "Cloud-native Platform",
-    "description": "Designed a scalable cloud-native platform using Go, Remix, AWS Fargate, and DynamoDB.",
-    "techStack": ["Golang", "Remix", "AWS Fargate", "DynamoDB"],
-    "link": "https://github.com/AdamNJG/cloud-native-platform"
+        "title": "Portfolio",
+        "description": "Created using React, React Router, and TypeScript. This is the site you are currently viewing!",
+        "techStack": ["React", "React Router", "Vite", "TypeScript", "Github Actions"],
+        "gitLink": "https://github.com/AdamNJG/anjg-portfolio"
+    },
+    {
+        "title": "Basic Reactive Mediator",
+         "description": "An open-source TypeScript functional/reactive implementation of the mediator pattern, designed to run as a singleton in either a browser client or a backend server. Built using TDD with mutation tests and simple performance benchmarks, and with zero external dependencies.",
+        "techStack": ["TypeScript", "Vitest", "Stryker", "Github Actions", "NPM Publishing"],
+        "gitLink": "https://github.com/AdamNJG/basic-reactive-mediator",
+        "deployedLink": {
+            "link": "https://www.npmjs.com/package/basic-reactive-mediator",
+            "displayText": "View on NPM registry"
+        } 
+    },
+    {
+        "title": "Basic Swipe Handler",
+          "description": "A reusable, framework-agnostic TypeScript library to detect and handle swipe gestures and touch movements on both horizontal and vertical axes. It supports configurable swipe thresholds and callbacks for swipe directions (left, right, up, down), as well as continuous movement updates with minimum and maximum move thresholds. Built with clean API design, strong typing, and performance in mind. Currently a work in progress, with planned enhancements and documentation updates.",
+        "techStack": ["TypeScript", "Event Handling", "Custom Gesture Logic", "Vitest"],
+        "gitLink": "https://github.com/AdamNJG/basicswipehandler"
     }
 ]

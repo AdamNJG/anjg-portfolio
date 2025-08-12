@@ -1,10 +1,11 @@
 
 import Project from './Project.tsx';
 import projects from '../../assets/projects.json';
+import './Projects.css';
 
 export default function Projects () {
 
-  return (<>
+  return (<div className="projectsContainer">
     <h1>Projects</h1>
     {projects.map((proj) => (
         <Project
@@ -12,8 +13,9 @@ export default function Projects () {
         title={proj.title}
         description={proj.description}
         techStack={proj.techStack}
-        link={proj.link}
+        gitLink={proj.gitLink}
+				deployedLink={proj.deployedLink}
         />
     ))}
-  </>);
+  </div>);
 }
