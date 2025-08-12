@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript">
+    // Capture the path and query string
+    var redirectPath = window.location.pathname
+      .replace(/^\/anjg-portfolio/, '') // remove base
+      + window.location.search
+      + window.location.hash;
+
+    // Redirect to index.html with ?redirect=...
+    var newUrl = '/anjg-portfolio/?redirect=' + encodeURIComponent(redirectPath);
+    window.location.replace(newUrl);
+  </script>
+</head>
+<body></body>
+</html>
