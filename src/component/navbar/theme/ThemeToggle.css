@@ -1,7 +1,7 @@
 .toggle-switch {
   width: 60px;
   height: 30px;
-  background-color: var(--button-bg);
+  background-color: var(--color-bg-tertiary);
   border-radius: 30px;
   border: 1px solid transparent;
   cursor: pointer;
