@@ -27,10 +27,6 @@ export default function ThemeToggle () {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   };
 
-  /*return (
-  <button onClick={handleThemeChange}>Theme</button>
-  );*/
-
   return (
     <button
       onClick={handleThemeChange}

@@ -1,0 +1,8 @@
+[
+    {
+    "title": "Cloud-native Platform",
+    "description": "Designed a scalable cloud-native platform using Go, Remix, AWS Fargate, and DynamoDB.",
+    "techStack": ["Golang", "Remix", "AWS Fargate", "DynamoDB"],
+    "link": "https://github.com/AdamNJG/cloud-native-platform"
+    }
+]
