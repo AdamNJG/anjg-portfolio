@@ -101,6 +101,7 @@ export default function TechnicalSkills () {
                 <ul className='tech-stack'>
                     <li><TechChip tech='Machine Learning (Coursera, Stanford, Andrew Ng)' logo={false}/></li>
                     <li><TechChip tech='Deep Learning Specialization (Coursera, DeepLearning.AI, Andrew Ng)' logo={false}/></li>
+                    
                     <li><TechChip tech='TensorFlow' logo={false}/></li>
                     <li><TechChip tech='Keras' logo={false}/></li>
                     <li><TechChip tech='Pandas' logo={false}/></li>
