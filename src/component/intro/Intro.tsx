@@ -53,7 +53,6 @@ export default function Intro () {
         </div>
         <NavLink 
           to="/projects" 
-          className="cta-link"
           aria-describedby="projects-description"
         >
           View My Work
