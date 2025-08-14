@@ -19,6 +19,11 @@ import MssqlLogo from '../../assets/logos/microsoft-sql-server.svg';
 import CSharpLogo from '../../assets/logos/CSharp.svg';
 import NodeJsLogo from '../../assets/logos/Node.js.svg';
 import AwsLogo from '../../assets/logos/aws-logo.svg';
+import JavaLogo from '../../assets/logos/java-icon.svg';
+import CppLogo from '../../assets/logos/cpp-logo.svg';
+import JavaScriptLogo from '../../assets/logos/javascript-logo.svg';
+import PythonLogo from '../../assets/logos/python.svg';
+import GoLogo from '../../assets/logos/Go-Logo.svg';
 
 export const lightLogoMap: Record<string, string> = {
   React: ReactLogo,
@@ -41,7 +46,12 @@ export const lightLogoMap: Record<string, string> = {
   MSSQL: MssqlLogo,
   'C#': CSharpLogo,
   'Node.js': NodeJsLogo,
-  AWS: AwsLogo
+  AWS: AwsLogo,
+  Java: JavaLogo,
+  'C++': CppLogo,
+  'JavaScript': JavaScriptLogo,
+  Python: PythonLogo,
+  Go: GoLogo
 };
 
 export const darkLogoMap: Record<string, string> = {

@@ -2,19 +2,21 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 105%;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --color-text: #213547;
-  --color-bg-primary: #f7f7f7;
+  --color-bg-primary: #fff;
   --color-bg-secondary: #f0f0f0;
   --color-bg-tertiary: #cccccc;
   --color-link: #343ccf;
   --color-link-hover: #747bff;
-  --button-bg: #f9f9f9;
+  --button-bg: #ffffff;
   --button-border-hover: #646cff;
   --button-text: #213547;
+  --chip-bg: #ccc;
 }
 
 [data-theme="dark"] {
@@ -27,6 +29,7 @@
   --button-bg: #1a1a1a;
   --button-border-hover: #646cff;
   --button-text: rgba(255, 255, 255, 0.87);
+  --chip-bg: #444;
 }
 
 a {
@@ -55,7 +58,6 @@ h1 {
 }
 
 button {
-  
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;

@@ -2,7 +2,7 @@ import './TechChip.css';
 import { lightLogoMap, darkLogoMap } from '../common/logoMap';
 import { useState, useEffect } from 'react';
 
-export default function TechChip ({ tech }: {tech: string}) {
+export default function TechChip ({ tech, logo = true }: {tech: string, logo?: boolean}) {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
   });
@@ -19,7 +19,7 @@ export default function TechChip ({ tech }: {tech: string}) {
 
   return (    
     <div className="chip">
-      <img src={theme === 'dark' ? darkLogoMap[tech] : lightLogoMap[tech]} alt={`${tech} logo`} className="chip-icon" />
+      {logo ? <img src={theme === 'dark' ? darkLogoMap[tech] : lightLogoMap[tech]} alt={`${tech} logo`} className="chip-icon" /> : null}
       <span>{tech}</span>
     </div>
   );

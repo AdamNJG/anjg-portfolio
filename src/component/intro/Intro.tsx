@@ -17,7 +17,7 @@ export default function Intro () {
   const checkRedirect = (redirect: string): boolean => ['/about', '/projects'].includes(redirect);
 
   return (
-    <section id="home" className="home-intro">
+    <section id="home">
       <div className="intro-text">
         <h1>Hi, I'm <span className="highlight">Adam Goldsmith</span></h1>
         <p>

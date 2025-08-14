@@ -23,9 +23,9 @@ export default function NavBar () {
         </li>
         <li>
           <NavLink 
-            to="/about" 
+            to="/skills" 
           >
-            About Me
+            Technical Skills
           </NavLink>
         </li>
       </ul>
