@@ -16,10 +16,6 @@
 }
 
 .tech-stack {
-
-}
-
-.tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -27,4 +23,8 @@
   justify-content: center;
   list-style: none;
   padding-left: 0;
+}
+
+.projects-link {
+  padding: 1rem;
 }

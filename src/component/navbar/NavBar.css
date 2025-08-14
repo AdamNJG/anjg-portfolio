@@ -20,7 +20,7 @@
     list-style-type: none;
 }
 
-a, button {
+.navbar a, button {
   background-color: var(--button-bg);
   color: var(--button-text);
   border-radius: 0.5rem;

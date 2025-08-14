@@ -51,15 +51,17 @@ export default function Intro () {
             as well as languages that are more suited to a cloud-native environment and you can see examples of these in my projects below.
           </p>
         </div>
-        <NavLink 
-          to="/projects" 
-          aria-describedby="projects-description"
+        <nav 
+          aria-label={`Navigate to projects page to see examples of my software development work`} 
+          className="projects-link"
         >
-          View My Work
-        </NavLink>
-        <span id="projects-description" className="sr-only">
-          Navigate to projects page to see examples of my software development work
-        </span>
+          <NavLink 
+            to="/projects" 
+            aria-describedby="projects-description"
+          >
+            View My Work
+          </NavLink>
+        </nav>
       </div>
     </section>
   );
