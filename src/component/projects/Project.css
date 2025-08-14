@@ -7,4 +7,10 @@
 
 .project-link {
   color: var(--button-text);
+  margin: 1rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
 }

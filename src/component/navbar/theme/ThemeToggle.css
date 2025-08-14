@@ -1,6 +1,6 @@
 .toggle-switch {
-  width: 60px;
-  height: 30px;
+  width: 90px;
+  height: 45px;
   background-color: var(--color-bg-tertiary);
   border-radius: 30px;
   border: 1px solid transparent;
@@ -11,13 +11,13 @@
 }
 
 .slider {
-  width: 28px;
-  height: 28px;
+  width: 46.7%; /* 28 / 60 */
+  height: 93.3%; /* 28 / 30 */
+  left: 1.67%;  /* 1 / 60 */
+  top: 3.33%;   /* 1 / 30 */
   background-color: var(--button-text);
   border-radius: 50%;
   position: absolute;
-  top: 1px;
-  left: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 
 .toggle-switch.dark .slider {
-  left: 31px;
+  left: 51.7%; /* 31 / 60 */
 }
 
 .icon {

@@ -30,32 +30,28 @@ const Project: React.FC<ProjectProps> = ({ title, description, techStack, gitLin
             </li>
           ))}
         </ul>
-      <nav aria-label={`Links for ${title} project`} className='project-nav'>
+      <nav aria-label={`Links for ${title} project`} className="project-links">
         {gitLink && (
-          <p>
-            <a 
-              href={gitLink} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className='project-link'
-              aria-label={`View source code for ${title} (opens in new tab)`}
-            >
-              View Source Code
-            </a>
-          </p>
+          <a 
+            href={gitLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className='project-link'
+            aria-label={`View source code for ${title} (opens in new tab)`}
+          >
+            View Source Code
+          </a>
         )}
         {deployedLink && (
-          <p>
-            <a 
-              href={deployedLink.link} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className='project-link'
-              aria-label={`${deployedLink.displayText} for ${title} (opens in new tab)`}
-            >
-              {deployedLink.displayText}
-            </a>
-          </p>
+          <a 
+            href={deployedLink.link} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className='project-link'
+            aria-label={`${deployedLink.displayText} for ${title} (opens in new tab)`}
+          >
+            {deployedLink.displayText}
+          </a>
         )}
       </nav>
     </article>
