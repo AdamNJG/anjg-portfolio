@@ -1,5 +1,5 @@
 import './TechChip.css';
-import { lightLogoMap, darkLogoMap } from './logoMap';
+import { lightLogoMap, darkLogoMap } from '../common/logoMap';
 import { useState, useEffect } from 'react';
 
 export default function TechChip ({ tech }: {tech: string}) {

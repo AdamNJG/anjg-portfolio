@@ -15,6 +15,10 @@ import TokioLogo from '../../assets/logos/Tokio_logo.svg';
 import PlaywrightLogo from '../../assets/logos/Playwright.svg';
 import HandImage from '../../assets/logos/hand.svg';
 import LightingImage from '../../assets/logos/lightning-icon.svg';
+import MssqlLogo from '../../assets/logos/microsoft-sql-server.svg'; 
+import CSharpLogo from '../../assets/logos/CSharp.svg';
+import NodeJsLogo from '../../assets/logos/Node.js.svg';
+import AwsLogo from '../../assets/logos/aws-logo.svg';
 
 export const lightLogoMap: Record<string, string> = {
   React: ReactLogo,
@@ -33,7 +37,11 @@ export const lightLogoMap: Record<string, string> = {
   Criterion: RustLogoBlack,
   Playwright: PlaywrightLogo,
   'Custom Gesture Logic': HandImage,
-  'Event Handling': LightingImage
+  'Event Handling': LightingImage,
+  MSSQL: MssqlLogo,
+  'C#': CSharpLogo,
+  'Node.js': NodeJsLogo,
+  AWS: AwsLogo
 };
 
 export const darkLogoMap: Record<string, string> = {
