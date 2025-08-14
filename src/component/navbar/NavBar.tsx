@@ -7,7 +7,8 @@ export default function NavBar () {
   return (
     <nav>
         <div className="paths">
-          <NavLink to="/">Projects</NavLink>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/about">About Me</NavLink>
         </div>
 
