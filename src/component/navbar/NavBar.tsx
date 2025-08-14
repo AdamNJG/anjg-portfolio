@@ -5,13 +5,30 @@ import './NavBar.css';
 export default function NavBar () {
 
   return (
-    <nav>
-        <div className="paths">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/about">About Me</NavLink>
-        </div>
-
+    <nav className='navbar' role="navigation" aria-label="Main navigation">
+      <ul className='paths' role='list'>
+        <li>
+          <NavLink 
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/projects" 
+          >
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/about" 
+          >
+            About Me
+          </NavLink>
+        </li>
+      </ul>
         <ThemeToggle/>
     </nav>
   );

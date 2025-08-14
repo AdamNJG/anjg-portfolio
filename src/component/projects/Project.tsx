@@ -1,5 +1,6 @@
 import React from 'react';
 import TechChip from './TechChip';
+import './Project.css';
 
 interface ProjectProps {
   title: string;
@@ -11,28 +12,52 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ title, description, techStack, gitLink, deployedLink }) => {
   return (
-    <article style={{ border: '1px solid var(--button-border-hover)', borderRadius: '0.5rem', padding: '1rem', marginBottom: '1rem' }}>
-      <h3>{title}</h3>
+    <article 
+      className='project' 
+      aria-labelledby={`project-title-${title.replace(/\s+/g, '-').toLowerCase()}`}
+      >
+      <h3 id={`project-title-${title.replace(/\s+/g, '-').toLowerCase()}`}>{title}</h3>
       <p>{description}</p>
-      <strong>Tech Stack:</strong> <div className="tech-stack">
-        {techStack.map((tech, index) => (
-          <TechChip key={`chip-${index}`} tech={tech}/>
-        ))}
-      </div>
-      {gitLink && (
-        <p>
-          <a href={gitLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--button-text)' }}>
-            View Source Code
-          </a>
-        </p>
-      )}
-      {deployedLink && (
-        <p>
-          <a href={deployedLink.link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--button-text)' }}>
-            {deployedLink.displayText}
-          </a>
-        </p>
-      )}
+      <strong>Tech Stack:</strong>
+        <ul 
+          className="tech-stack" 
+          role="list" 
+          aria-label={`Technologies used in ${title}`}
+        >
+          {techStack.map((tech, index) => (
+            <li  key={`chip-${index}`} >
+              <TechChip tech={tech}/>
+            </li>
+          ))}
+        </ul>
+      <nav aria-label={`Links for ${title} project`} className='project-nav'>
+        {gitLink && (
+          <p>
+            <a 
+              href={gitLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className='project-link'
+              aria-label={`View source code for ${title} (opens in new tab)`}
+            >
+              View Source Code
+            </a>
+          </p>
+        )}
+        {deployedLink && (
+          <p>
+            <a 
+              href={deployedLink.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className='project-link'
+              aria-label={`${deployedLink.displayText} for ${title} (opens in new tab)`}
+            >
+              {deployedLink.displayText}
+            </a>
+          </p>
+        )}
+      </nav>
     </article>
   );
 };

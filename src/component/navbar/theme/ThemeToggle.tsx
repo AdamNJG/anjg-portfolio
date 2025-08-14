@@ -30,13 +30,23 @@ export default function ThemeToggle () {
 
   return (
     <button
-      onClick={handleThemeChange}
-      className={`toggle-switch ${theme}`}
-      aria-label="Toggle theme"
+        onClick={handleThemeChange}
+        className={`toggle-switch ${theme}`}
+        role="switch"
+        aria-label="Dark mode"
+        aria-checked={theme === 'dark'}
+        type="button"
       >
       <div className="slider">
-        {theme === 'dark' ? <FaMoon className="icon" /> : <FaSun className="icon" />}
+        {theme === 'dark' ? (
+            <FaMoon className="icon" aria-hidden="true" />
+          ) : (
+            <FaSun className="icon" aria-hidden="true" />
+          )}
       </div>
+      <span className="sr-only">
+        {theme === 'dark' ? 'Dark mode enabled' : 'Light mode enabled'}
+      </span>
     </button>
   );
 } 

@@ -1,0 +1,10 @@
+.project { 
+    border: 1px solid var(--button-border-hover);
+    border-radius: 0.5rem;
+    padding: 1rem; 
+    margin-bottom: 1rem;
+ }
+
+.project-link {
+  color: var(--button-text);
+}
