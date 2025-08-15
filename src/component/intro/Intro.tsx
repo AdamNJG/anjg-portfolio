@@ -61,6 +61,9 @@ export default function Intro () {
           >
             View My Work
           </NavLink>
+          <p id="projects-description" className='sr-only'>
+            Explore a selection of my projects, including web apps, design work, and more.
+          </p>
         </nav>
       </div>
     </section>

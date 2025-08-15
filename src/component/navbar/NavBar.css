@@ -75,9 +75,7 @@ a:hover, button:hover {
   display: block;
   border: solid var(--button-border) 1px;
   border-radius: 10px;
-  cursor: none;
   background-color: inherit;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .off-screen-paths a:active {
