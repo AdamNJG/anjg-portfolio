@@ -73,7 +73,7 @@ a:hover, button:hover {
 
 .off-screen-paths a {
   display: block;
-  border: solid var(--button-text) 1px;
+  border: solid var(--button-border) 1px;
   border-radius: 10px;
   cursor: none;
   background-color: inherit;
@@ -101,7 +101,7 @@ a:hover, button:hover {
 .ham-menu span {
   height: 2px;
   width: 80%;
-  background-color: var(--button-bg);
+  background-color: var(--button-text);
   border-radius: 25px;
   position: relative;
   transition: .3s ease;

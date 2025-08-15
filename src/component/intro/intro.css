@@ -1,6 +1,7 @@
 .intro-text {
     max-width: 800px;
     margin: auto;
+    padding: 0 10px;
 }
 
 .sr-only {
