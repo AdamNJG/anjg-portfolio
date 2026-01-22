@@ -29,14 +29,28 @@
     },
     {
         "title": "auto-api-gen",
-        "description": "A pre-compilation toolchain that transforms API specifications into optimized, type-safe clients. By 'forward caching' the integration logic at build-time, it ensures near-zero runtime overhead and significantly smaller bundle sizes. Designed for maximum execution speed and developer ergonomics by abstracting boilerplate into static, predictable code.",
-        "techStack": ["TypeScript", "Compiler Tooling", "Pre-compilation", "Performance Optimization", "DX", "TDD", "Stryker"],
-        "gitLink": "https://github.com/AdamNJG/auto-api-gen"
+        "description": "A pre-compilation toolchain published to NPM that transforms API specifications into optimized, type-safe clients. By 'forward caching' integration logic at build-time, it ensures near-zero runtime overhead and significantly smaller bundle sizes. Designed to abstract boilerplate into static, predictable code for performance-critical environments.",
+        "techStack": ["TypeScript", "Compiler Tooling", "Pre-compilation", "NPM Publishing", "DX"],
+        "gitLink": "https://github.com/AdamNJG/auto-api-gen",
+        "deployedLink": {
+            "link": "https://www.npmjs.com/package/auto-api-gen",
+            "displayText": "View on NPM registry"
+        }
     },
     {
         "title": "Rust OpenGL Engine",
         "description": "A performance-critical rendering engine built from the ground up in Rust. Implements a custom graphics pipeline with a focus on memory safety and zero-cost abstractions. Features manual GPU resource management, abstract buffer handling, and a 'pre-compilation' approach to shader state and pipeline configuration to ensure maximum runtime execution speed. - This is a work in progress and kind of a playground for techniques as I learn them",
         "techStack": ["Rust", "OpenGL", "GLSL", "Linear Algebra", "Systems Programming"],
         "gitLink": "https://github.com/AdamNJG/rust-openGL"
+    },
+    {
+        "title": "DocGenJs",
+        "description": "A pragmatic static analysis utility designed to automate technical documentation through pattern extraction. By opting for optimized regex-based parsing over a full AST implementation, it achieves high-speed processing of source files to maintain an automated 'source of truth' for developer references.",
+        "techStack": ["JavaScript", "Static Analysis", "Pattern Matching", "Documentation Tooling", "NPM Publishing"],
+        "gitLink": "https://github.com/AdamNJG/DocGenJs",
+        "deployedLink": {
+            "link": "https://www.npmjs.com/package/doc-gen-js",
+            "displayText": "View on NPM registry"
+        }
     }
 ]
