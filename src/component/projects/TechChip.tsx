@@ -17,9 +17,18 @@ export default function TechChip ({ tech, logo = true }: {tech: string, logo?: b
     return () => window.removeEventListener('theme-change', handleThemeChange);
   }, []);
 
+  const currentMap = theme === 'dark' ? darkLogoMap : lightLogoMap;
+
+  const hasLogo = logo && currentMap[tech];
+
   return (    
     <div className="chip">
-      {logo ? <img src={theme === 'dark' ? darkLogoMap[tech] : lightLogoMap[tech]} alt={`${tech} logo`} className="chip-icon" /> : null}
+      {hasLogo ? <img 
+        src={currentMap[tech]}
+        alt={`${tech} logo`} 
+        className="chip-icon" /> : 
+        null
+        }
       <span>{tech}</span>
     </div>
   );

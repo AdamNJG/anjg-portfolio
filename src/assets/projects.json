@@ -23,8 +23,20 @@
     },
     {
         "title": "proto-translator",
-        "description": "A Docker-based sidecar that serves as a protocol translation layer. It enables developers to add plugins compiled to Linux native executables via FFI C header files. Supports Input, Middleware, and Output plugins, providing a flexible architecture for handling various protocol translation scenarios. This is a work in progress, with FFI headers still in development, internal multi-threading planned for performance, and Docker containers for deployment and acceptance testing. Test plugins use Axum and Tokio to create HTTP servers for acceptance testing.",
-        "techStack": ["Rust", "Docker", "FFI", "Tokio", "Axum", "Criterion", "Playwright"],
+        "description": "A high-performance protocol translation layer built in Rust, utilizing a sidecar architecture. Implements a plugin system via FFI and C-header files, allowing native Linux executables to interface with a multi-threaded asynchronous core. Built with Tokio and Axum, it focuses on low-latency data transformation and cross-language compatibility.",
+        "techStack": ["Rust", "FFI", "C-Headers", "Multi-threading", "Tokio", "Docker"],
         "gitLink": "https://github.com/AdamNJG/proto-translator"
+    },
+    {
+        "title": "auto-api-gen",
+        "description": "A pre-compilation toolchain that transforms API specifications into optimized, type-safe clients. By 'forward caching' the integration logic at build-time, it ensures near-zero runtime overhead and significantly smaller bundle sizes. Designed for maximum execution speed and developer ergonomics by abstracting boilerplate into static, predictable code.",
+        "techStack": ["TypeScript", "Compiler Tooling", "Pre-compilation", "Performance Optimization", "DX", "TDD", "Stryker"],
+        "gitLink": "https://github.com/AdamNJG/auto-api-gen"
+    },
+    {
+        "title": "Rust OpenGL Engine",
+        "description": "A performance-critical rendering engine built from the ground up in Rust. Implements a custom graphics pipeline with a focus on memory safety and zero-cost abstractions. Features manual GPU resource management, abstract buffer handling, and a 'pre-compilation' approach to shader state and pipeline configuration to ensure maximum runtime execution speed. - This is a work in progress and kind of a playground for techniques as I learn them",
+        "techStack": ["Rust", "OpenGL", "GLSL", "Linear Algebra", "Systems Programming"],
+        "gitLink": "https://github.com/AdamNJG/rust-openGL"
     }
 ]
