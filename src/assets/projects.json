@@ -46,7 +46,7 @@
     {
         "title": "DocGenJs",
         "description": "A pragmatic static analysis utility designed to automate technical documentation through pattern extraction. By opting for optimized regex-based parsing over a full AST implementation, it achieves high-speed processing of source files to maintain an automated 'source of truth' for developer references.",
-        "techStack": ["JavaScript", "Static Analysis", "Pattern Matching", "Documentation Tooling", "NPM Publishing"],
+        "techStack": ["typescript", "JavaScript", "Static Analysis", "Pattern Matching", "Documentation Tooling", "NPM Publishing"],
         "gitLink": "https://github.com/AdamNJG/DocGenJs",
         "deployedLink": {
             "link": "https://www.npmjs.com/package/doc-gen-js",
